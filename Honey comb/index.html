@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honeycomb Layout</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="textContainer">
+        <ul class="listItems" id="ulList">
+          <div class="draggableElement" id="dragableElemen1" draggable="true" ondragstart="drag(event)">
+            <li class="dragContainer">Project A</li>
+          </div>
+          <div class="draggableElement" id="dragableElemen2" draggable="true" ondragstart="drag(event)">
+            <li class="dragContainer">Project B</li>
+          </div>
+          <div class="draggableElement" id="dragableElemen3" draggable="true" ondragstart="drag(event)">
+            <li class="dragContainer">Project C </li>
+          </div>
+          <div class="draggableElement" id="dragableElemen4" draggable="true" ondragstart="drag(event)">
+            <li class="dragContainer">Project D</li>
+          </div>
+        </ul>
+    </div>
+    <div class="honeycombMainContainer">
+      <div class="honeyComb">
+        <div class="honeyCombCell" id="blankArea1" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea2" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea3" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea4" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea5" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea6" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="honeyCombCell" id="blankArea7" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+        </div>
+      </div>
+    </div>
+  
+  <div class="subTextContainer" style="display: none" id="insertableData">
+    <div class="subTextHeader">header</div>
+    <div class="subTextBody">body</div>
+  </div>
+</body>
+
+</html>
